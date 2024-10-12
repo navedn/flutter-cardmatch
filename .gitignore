@@ -31,6 +31,9 @@ migrate_working_dir/
 .pub/
 /build/
 
+# Personal File, not to be uploaded to GitHub w/ Information ab Project
+Personal_ReadMe.txt
+
 # Symbolication related
 app.*.symbols
 
