@@ -202,6 +202,25 @@ class _CardGameState extends State<CardGame> {
                                               _start = false;
                                             });
                                           });
+                                          showDialog(
+                                            context: context,
+                                            builder: (BuildContext context) {
+                                              return AlertDialog(
+                                                title: Text("Victory!"),
+                                                content: Text(
+                                                    "Congratulations, You Won!"),
+                                                actions: [
+                                                  TextButton(
+                                                    child: Text("OK"),
+                                                    onPressed: () {
+                                                      Navigator.of(context)
+                                                          .pop(); // Close the dialog
+                                                    },
+                                                  ),
+                                                ],
+                                              );
+                                            },
+                                          );
                                         }
                                       }
                                     }
