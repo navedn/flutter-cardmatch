@@ -21,7 +21,7 @@ class _CardGameState extends State<CardGame> {
   bool _start = false;
   bool? _wait = false;
   Timer? _timer;
-  int _time = 5;
+  int _time = 3;
   int _left = 0;
   bool? _isFinished;
   List<dynamic>? _data;
@@ -62,10 +62,10 @@ class _CardGameState extends State<CardGame> {
     _data = getSourceArray(_level);
     _cardFlips = getInitialItemState(_level);
     _cardStateKeys = getCardStateKeys(_level);
-    _time = 5;
+    _time = 3;
     _left = (_data!.length ~/ 2);
     _isFinished = false;
-    Future.delayed(const Duration(seconds: 6), () {
+    Future.delayed(const Duration(seconds: 5), () {
       setState(() {
         _start = true;
         _timer!.cancel();

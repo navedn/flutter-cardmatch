@@ -15,7 +15,7 @@ class _HomescreenState extends State<HomeScreen> {
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: ListView.builder(
-          itemCount: _list.length,
+          itemCount: 1,
           itemBuilder: (context, index) {
             return GestureDetector(
               onTap: () {
@@ -124,11 +124,11 @@ class Details {
 
 List<Details> _list = [
   Details(
-      name: "EASY",
+      name: "Start Game!!!",
       primaryColor: const Color.fromARGB(255, 128, 234, 128),
       secondaryColor: Colors.green,
-      noOfStar: 1,
-      goto: CardGame(Level.Easy)),
+      noOfStar: 0,
+      goto: CardGame(Level.Hard)),
   Details(
       name: "MEDIUM",
       primaryColor: const Color.fromARGB(255, 255, 193, 100),
